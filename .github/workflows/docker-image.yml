@@ -22,7 +22,7 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_SECRET }}
 
-      - name: Build and push backend image
+      - name: Build and push backend image 
         uses: docker/build-push-action@v6
         with:
           context: ./STUDENTAPI-SPRINGBOOT
